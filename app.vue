@@ -17,7 +17,10 @@
 <script setup lang="ts">
 useHead({
   title: SITE_TITLE,
-  meta: [{ name: "description", content: "Best travel agent in Kutch" }],
+  meta: [
+    { name: "description", content: "Experience hassle-free travel with Gatral Krupa Tours & Travels' car hire services. Choose from our fleet of Toofan, Ertiga, Innova, Tempo Traveller, and more, complete with professional drivers. Perfect for family trips, business tours, and special occasions. Comfort and reliability guaranteed!" },
+    { hid: 'og:image', property: 'og:image', content: BASE_URL+ '/images/og.png' }
+  ],
   script: [
     { src: "/js/jquery.js" },
     { src: "/js/bootstrap.min.js" },
