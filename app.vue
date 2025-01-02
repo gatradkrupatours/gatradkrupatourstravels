@@ -10,10 +10,6 @@
     </Head>
     <NuxtRouteAnnouncer />
     <NuxtPage />
-    <Script src="/js/jquery.js"></Script>
-    <Script src="/js/bootstrap.min.js"></Script>
-    <Script src="/js/owl.carousel.min.js"></Script>
-    <Script src="/js/smoothscroll.js"></Script>
     <Script src="/js/custom.js"></Script>
     <Script src="/js/contact.js"></Script>
   </div>
