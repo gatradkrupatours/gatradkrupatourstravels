@@ -10,7 +10,19 @@
     </Head>
     <NuxtRouteAnnouncer />
     <NuxtPage />
-    <Script src="/js/custom.js"></Script>
-    <Script src="/js/contact.js"></Script>
   </div>
 </template>
+<script setup lang="ts">
+useHead({
+  title: SITE_TITLE,
+  meta: [{ name: "description", content: "Best travel agent in Kutch" }],
+  script: [
+    { src: "/js/jquery.js" },
+    { src: "/js/bootstrap.min.js" },
+    { src: "/js/owl.carousel.min.js" },
+    { src: "/js/smoothscroll.js" },
+    { src: "/js/custom.js" },
+    { src: "/js/contact.js" },
+  ],
+});
+</script>
