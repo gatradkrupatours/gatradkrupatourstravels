@@ -1122,3 +1122,12 @@ main>section:nth-child(even) {
   height: 200px;
   object-fit: contain;
 }
+
+#home {
+  display: flex;
+  justify-content: center;
+}
+
+#home .row {
+  width: 100%;
+}
