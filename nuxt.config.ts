@@ -8,10 +8,6 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Everything about Nuxt 3' }
       ],
       script: [
-        { src: '/js/jquery.js' },
-        { src: '/js/bootstrap.min.js' },
-        { src: '/js/owl.carousel.min.js' },
-        { src: '/js/smoothscroll.js' },
       ]
     }
   },
