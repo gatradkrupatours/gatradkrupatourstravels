@@ -12,6 +12,9 @@ body {
   background: #ffffff;
   font-family: 'Nunito', sans-serif;
   overflow-x: hidden;
+}
+
+body:has(.navbar) {
   padding-top: 70px;
 }
 
