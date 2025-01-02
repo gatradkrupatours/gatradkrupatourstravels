@@ -10,5 +10,7 @@
     </Head>
     <NuxtRouteAnnouncer />
     <NuxtPage />
+    <Script src="/js/custom.js"></Script>
+    <Script src="/js/contact.js"></Script>
   </div>
 </template>

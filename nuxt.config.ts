@@ -12,8 +12,6 @@ export default defineNuxtConfig({
         { src: '/js/bootstrap.min.js' },
         { src: '/js/owl.carousel.min.js' },
         { src: '/js/smoothscroll.js' },
-        { src: '/js/custom.js' },
-        { src: '/js/contact.js' },
       ]
     }
   },

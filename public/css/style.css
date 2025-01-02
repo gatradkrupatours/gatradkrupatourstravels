@@ -419,16 +419,16 @@ section {
 }
 
 .home-slider .item-first {
-  background-image: url(../images/banners/Great-Rann-Of-Kutch-Banner.jpg);
+  background-image: url(/images/banners/Great-Rann-Of-Kutch-Banner.jpg);
   background-position: center;
 }
 
 .home-slider .item-second {
-  background-image: url(../images/banners/road-to-heaven-wide.jpg);
+  background-image: url(/images/banners/road-to-heaven-wide.jpg);
 }
 
 .home-slider .item-third {
-  background-image: url(../images/banners/vijay-vilas.jpeg);
+  background-image: url(/images/banners/vijay-vilas.jpeg);
 }
 
 
