@@ -14,7 +14,7 @@
     <Script src="/js/contact.js"></Script>
   </div>
 </template>
-<script setup lang="ts">
+<script setup lang="js">
 const runtimeConfig = useRuntimeConfig()
 useHead({
   title: SITE_TITLE,

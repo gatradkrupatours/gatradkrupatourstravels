@@ -473,7 +473,7 @@
   <Footer />
 </template>
 
-<script setup lang="ts">
+<script setup lang="js">
 function gtag_report_conversion(url) {
   const callback = function () {
     if (typeof url != "undefined") {
