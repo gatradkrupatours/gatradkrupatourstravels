@@ -15,6 +15,7 @@
   </div>
 </template>
 <script setup lang="ts">
+const runtimeConfig = useRuntimeConfig()
 useHead({
   title: SITE_TITLE,
   meta: [
@@ -26,6 +27,24 @@ useHead({
     { src: "/js/bootstrap.min.js" },
     { src: "/js/owl.carousel.min.js" },
     { src: "/js/smoothscroll.js" },
+    {
+      src: `https://www.googletagmanager.com/gtag/js?id=${runtimeConfig.public.gtm.id}`,
+      tagPosition: 'head',
+      async: true,
+    },
   ],
 });
+
+onMounted(() => {
+  if (window) {
+    window.gtag = function() {
+      window.dataLayer.push(arguments);
+    }
+    window.dataLayer = window.dataLayer || [];
+    window.gtag('js', new Date());
+
+    window.gtag('config', runtimeConfig.public.gtm.id);
+  }
+})
+
 </script>

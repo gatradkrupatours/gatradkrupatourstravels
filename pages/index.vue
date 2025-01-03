@@ -106,7 +106,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -139,7 +139,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -172,7 +172,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -205,7 +205,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -238,7 +238,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -271,7 +271,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -301,7 +301,7 @@
                   role="button"
                   type="button"
                   :href="'tel:' + MO_NUMBER"
-                  onclick="trackEvent()"
+                  @click="trackEvent()"
                   class="section-btn btn btn-primary btn-block"
                   >Book Now</a
                 >
@@ -472,3 +472,22 @@
   </section>
   <Footer />
 </template>
+
+<script setup lang="ts">
+function gtag_report_conversion(url) {
+  const callback = function () {
+    if (typeof url != "undefined") {
+      window.location = url;
+    }
+  };
+  gtag("event", "conversion", {
+    send_to: "AW-864630123/omNnCLqlvd8ZEOvqpJwD",
+    event_callback: callback,
+  });
+  return false;
+}
+
+function trackEvent() {
+  gtag_report_conversion();
+}
+</script>
