@@ -19,8 +19,17 @@ const gtmId = process.env.NODE_ENV === "production" ? "G-4Q3N91R954" : "G-4K4Q0S
 useHead({
   title: SITE_TITLE,
   meta: [
-    { name: "description", content: "Experience hassle-free travel with Gatral Krupa Tours & Travels' car hire services. Choose from our fleet of Toofan, Ertiga, Innova, Tempo Traveller, and more, complete with professional drivers. Perfect for family trips, business tours, and special occasions. Comfort and reliability guaranteed!" },
-    { hid: 'og:image', property: 'og:image', content: BASE_URL+ '/images/og.png' }
+    { name: "description", content: SITE_DESCRIPTION },
+    { name: "application-name", content: SITE_TITLE },
+    { hid: 'og:title', property: "og:title", content: SITE_TITLE },
+    { hid: 'og:description', property: "og:description", content: SITE_DESCRIPTION },
+    { hid: 'og:url', property: "og:url", content: BASE_URL },
+    { hid: 'og:image', property: 'og:image', content: OG_IMAGE },
+    { hid: 'og:type', property: "og:type", content: 'website' },
+    { name: "twitter:card", content: 'summary_large_image' },
+    { name: "twitter:title", content: SITE_TITLE },
+    { name: "twitter:description", content: SITE_DESCRIPTION },
+    { name: "twitter:image", content: OG_IMAGE },
   ],
   script: [
     { src: "/js/jquery.js" },
@@ -46,5 +55,4 @@ onMounted(() => {
     window.gtag('config', gtmId);
   }
 })
-
 </script>

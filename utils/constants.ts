@@ -1,7 +1,9 @@
 export const SITE_NAME = "Gatrad Krupa Tours & Travels"
 export const SITE_TITLE = SITE_NAME + " - Best Travel Agent in Kutch"
+export const SITE_DESCRIPTION = "Experience hassle-free travel with Gatral Krupa Tours & Travels' car hire services. Choose from our fleet of Toofan, Ertiga, Innova, Tempo Traveller, and more, complete with professional drivers. Perfect for family trips, business tours, and special occasions. Comfort and reliability guaranteed!"
 export const HQ_ADDRESS = "Mandvi Nagar Pakila Office No. 111, Mandvi Layja Road, Mandvi Kutch, Gujarat, India 370465"
 export const MO_NUMBER = "+913369029285"
 export const MO_NUMBER_STR = "033690 29285"
 export const RATING_URL = "https://g.page/r/CW2POp9xVqwfEBM/review"
 export const BASE_URL = "https://gatradkrupatourstravels.com"
+export const OG_IMAGE = BASE_URL+ '/images/og.jpg'
