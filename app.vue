@@ -15,7 +15,7 @@
   </div>
 </template>
 <script setup lang="js">
-const runtimeConfig = useRuntimeConfig()
+const gtmId = process.env.NODE_ENV === "production" ? "G-4Q3N91R954" : "G-4K4Q0S4G7N"
 useHead({
   title: SITE_TITLE,
   meta: [
@@ -28,7 +28,7 @@ useHead({
     { src: "/js/owl.carousel.min.js" },
     { src: "/js/smoothscroll.js" },
     {
-      src: `https://www.googletagmanager.com/gtag/js?id=${runtimeConfig.public.gtm.id}`,
+      src: `https://www.googletagmanager.com/gtag/js?id=${gtmId}`,
       tagPosition: 'head',
       async: true,
     },
@@ -43,7 +43,7 @@ onMounted(() => {
     window.dataLayer = window.dataLayer || [];
     window.gtag('js', new Date());
 
-    window.gtag('config', runtimeConfig.public.gtm.id);
+    window.gtag('config', gtmId);
   }
 })
 
